@@ -1,0 +1,62 @@
+.header {
+  &__wrapper {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 264px;
+  }
+  &__phone {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: $gray;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      color: inherit;
+    }
+  }
+  &__caption {
+    text-align: center;
+  }
+  &__login-btn {
+    background-color: inherit;
+    position: relative;
+    border: none;
+    margin-right: 28px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -35px;
+      top: -3px;
+      width: 30px;
+      height: 24px;
+      margin-right: 8px;
+      background: url('../img/icons/auth_arr.svg') center center/cover no-repeat;
+    }
+    &:hover{
+        background-color: inherit;
+    }
+  }
+  &__reg-btn {
+    width: 141px;
+    height: 40px;
+    border: none;
+    position: relative;
+    margin-right: 20px;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 40px;
+      right: -40px;
+      border: 20px solid transparent;
+      border-left: 20px solid $yellow;
+    }
+  }
+}

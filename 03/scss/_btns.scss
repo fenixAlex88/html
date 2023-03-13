@@ -1,0 +1,14 @@
+.btn-small,
+.btn-big,
+.btn-round {
+  outline: none;
+  background-color: $yellow;
+  transition: all 0.6s;
+  &:hover {
+    background-color: $yellow-hoveer;
+    transform: scale(1.1);
+    &::after {
+      border-left-color: $yellow-hoveer;
+    }
+  }
+}

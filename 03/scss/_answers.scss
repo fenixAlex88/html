@@ -1,0 +1,45 @@
+.answer {
+  margin-top: 96px;
+  padding-left: 20px;
+  &__title {
+    text-align: center;
+    display: block;
+    margin-bottom: 45px;
+    span {
+      color: $green;
+    }
+  }
+  &__item {
+    padding: 36px 36px 36px 46px;
+    position: relative;
+    transition: all 0.6s;
+    cursor: pointer;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      left: -21px;
+      width: 42px;
+      height: 44px;
+      background: url('../img/icons/answer_arr.svg') center center/cover no-repeat;
+    }
+    &_active {
+      background: $gray-super-light;
+      &::before {
+        transform: translateY(-50%);
+      }
+      .answer__descr {
+        display: block;
+      }
+    }
+  }
+  &__text {
+    color: $green;
+  }
+  &__descr {
+    margin-top: 12px;
+    display: none;
+  }
+}

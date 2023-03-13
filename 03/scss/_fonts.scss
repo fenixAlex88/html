@@ -1,0 +1,129 @@
+h1 {
+  /* desktop/h1 */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  /* desktop/h2 */
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  /* desktop/h3 */
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+h4 {
+  /* desktop/h4 */
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h5 {
+  /* desktop/h5 */
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: $gray-middle;
+}
+
+.text-big {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.text-small {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray-middle;
+}
+
+.btn-big {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $green-dark;
+}
+
+.btn-small {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: green;
+}
+
+.caption {
+  /* desktop/caption */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    /* mobile/h1 */
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h2 {
+    /* mobile/h2 */
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  h3 {
+    /* mobile/h3 */
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  h4 {
+    /* mobile/h4 */
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h5 {
+    /* mobile/h5 */
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text-big {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .text-small {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .btn-big {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .btn-small {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .caption {
+    /* mobile/caption */
+    font-size: 8px;
+    line-height: 10px;
+  }
+}

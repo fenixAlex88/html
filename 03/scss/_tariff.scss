@@ -1,0 +1,69 @@
+.tariff {
+  min-height: 510px;
+  &__title {
+    text-align: center;
+    span {
+      color: $green;
+    }
+  }
+  &__info {
+    margin: 16px auto 40px;
+    width: 620px;
+    height: 40px;
+    color: $white;
+    background: $green;
+    text-align: center;
+    line-height: 40px;
+  }
+  &__item {
+    background: $gray-super-light;
+    padding: 36px;
+  }
+  &__list {
+    list-style-type: none;
+    margin-top: 24px;
+    li {
+      margin-bottom: 14px;
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../img/icons/Group_green.svg');
+        position: absolute;
+        top: 0;
+        left: -35px;
+      }
+      &:last-child {
+        &::before {
+          background: url('../img/icons/Group_rubl.svg');
+        }
+      }
+      &.no-active {
+        color: $gray-light;
+        &::before {
+          background: url('../img/icons/Group_gray.svg');
+        }
+      }
+    }
+  }
+  &__btn {
+    width: 280px;
+    height: 68px;
+    border: none;
+    position: relative;
+    display: block;
+    margin: 32px auto 0;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 34px;
+      right: -54px;
+      border: 34px solid transparent;
+      border-left: 20px solid $yellow;
+    }
+  }
+}

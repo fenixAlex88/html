@@ -1,0 +1,77 @@
+.only {
+  position: relative;
+  &__wrapper {
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 660px);
+  }
+
+  &__item {
+    background: $gray-super-light;
+    min-height: 356px;
+    padding: 30px;
+    margin-top: 28px;
+    position: relative;
+    overflow: hidden;
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -108px;
+      right: -123px;
+      width: 224px;
+      height: 489px;
+      background-color: $yellow;
+      transform: rotate(32deg);
+    }
+  }
+  &__list {
+    list-style-type: none;
+    margin-top: 20px;
+    max-width: 220px;
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: -20px;
+        width: 12px;
+        height: 12px;
+        background: url('../img/icons/circle_item.svg') center center/cover no-repeat;
+      }
+    }
+    &_large {
+      margin-top: 100px;
+      display: flex;
+      counter-reset: num;
+      justify-content: space-between;
+      max-width: 930px;
+      li {
+        text-align: center;
+        width: 19%;
+        &::before {
+          display: none;
+        }
+        &::after {
+          content: '-' counter(num) '-';
+          counter-increment: num;
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: $yellow;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

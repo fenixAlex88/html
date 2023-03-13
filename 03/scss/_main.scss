@@ -1,0 +1,56 @@
+.main {
+  min-height: 704px;
+  background: linear-gradient(99.09deg, #494629bb 0%, #44803fbb 100%), url('../img/bg/main-bg.jpg') center center no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  &__title {
+    color: $white;
+    display: block;
+    margin: 0 auto;
+    padding-top: 168px;
+    max-width: 1060px;
+  }
+  &__info {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+    gap: 44px;
+  }
+  &__count {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    color: $yellow;
+  }
+  &__text,
+  &__descriptions {
+    font-weight: 700;
+    color: $white;
+  }
+  &__descriptions {
+    width: 321px;
+    height: 68px;
+    background: $green;
+    text-align: center;
+    padding: 15px;
+  }
+  &__btn {
+    width: 233px;
+    height: 68px;
+
+    border: none;
+    position: relative;
+    display: block;
+    margin: 32px auto 0;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 34px;
+      right: -67px;
+      border: 34px solid transparent;
+      border-left: 34px solid $yellow;
+    }
+  }
+}

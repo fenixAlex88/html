@@ -1,0 +1,22 @@
+@import 'vars';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $gray;
+}
+a {
+  text-decoration: none;
+}
+@import 'fonts';
+@import 'btns';
+@import 'header';
+@import 'main';
+@import 'only';
+@import 'review';
+@import 'tariff';
+@import 'how-work';
+@import 'answers';
+@import 'footer';
+
+@import 'utils';

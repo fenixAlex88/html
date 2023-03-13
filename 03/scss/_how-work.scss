@@ -1,0 +1,25 @@
+.how-work {
+    margin-top: 96px;
+  &__title {
+    text-align: center;
+    span {
+      color: $green;
+    }
+  }
+  &__item {
+    height: 332px;
+    background: $green;
+    padding: 36px;
+    position: relative;
+  }
+  &__step {
+    margin-top: 24px;
+    color: $yellow;
+  }
+  &__descr {
+    color: $white;
+    position: absolute;
+    bottom: 30px;
+    max-width: 220px;
+  }
+}
